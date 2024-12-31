@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_app/pages/main_page.dart';
+import 'package:login_app/config/app_routes.dart';
 import 'package:login_app/style/app_color.dart';
 
 void main() {
@@ -15,15 +15,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: "Merriweather",
         scaffoldBackgroundColor: AppColor.background,
-        brightness: Brightness.dark,
+        brightness: Brightness.light,
       ),
-
-      home: const MainPage(),
-      // initialRoute: "/",
-      // routes: {
-      //   "/": (context) => const MainPage(),
-      // "/home": (context) => const HomePage(),
-      // },
+      initialRoute: AppRoutes.login,
+      routes: AppRoutes.pages,
     );
   }
 }

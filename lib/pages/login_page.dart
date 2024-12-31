@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_app/config/app_routes.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -79,7 +80,7 @@ class LoginPage extends StatelessWidget {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).pushReplacementNamed("/home");
+                      Navigator.of(context).pushReplacementNamed(AppRoutes.main);
                       // Navigator.of(context)
                       //     .push(MaterialPageRoute(builder: (context) {
                       //   return const HomePage();
